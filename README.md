@@ -1,7 +1,7 @@
 HoloCapture for iOS
 =========
 
-HoloCapture is a virtual keyboard app for Microsoft HoloLens under LGPL license.  
+HoloCapture is a Mixed Reality Capture app for Microsoft HoloLens under LGPL license.  
 
 ![screenshot](https://github.com/sumihiro/HoloCapture/blob/master/img/screenshot.png)
 
