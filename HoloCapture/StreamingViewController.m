@@ -6,6 +6,7 @@
 //
 
 #import "StreamingViewController.h"
+#import "LibraryViewController.h"
 #import "IJKMediaPlayer.h"
 #import "IJKFFMoviePlayerController.h"
 #import <SVProgressHUD.h>
@@ -19,6 +20,8 @@ NSString *StreamingSettingLoopbackKey = @"StreamingSettingLoopbackKey";
 @interface StreamingViewController () <AVAssetDownloadDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *moviePlaceholder;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *libButton;
+@property (nonatomic,strong) UIBarButtonItem *libButtonBackup;
 
 @property (nonatomic,strong) id<IJKMediaPlayback> playback;
 
@@ -40,6 +43,8 @@ NSString *StreamingSettingLoopbackKey = @"StreamingSettingLoopbackKey";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.libButtonBackup = self.libButton;
     
     [self updateToolbar];
 }
@@ -101,7 +106,7 @@ NSString *StreamingSettingLoopbackKey = @"StreamingSettingLoopbackKey";
     
     i7 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     
-    NSArray *items = @[i1,i2,i3,i4,i5,i6,i7];
+    NSArray *items = @[i1,i2,i3,i4,i5,i6,i7,self.libButtonBackup];
     [self setToolbarItems:items animated:YES];
 }
 
@@ -165,6 +170,10 @@ NSString *StreamingSettingLoopbackKey = @"StreamingSettingLoopbackKey";
     
     [playback prepareToPlay];
     [playback play];
+}
+
+- (void)stop {
+    [self.playback stop];
 }
 
 #pragma mark -
@@ -241,6 +250,22 @@ NSString *StreamingSettingLoopbackKey = @"StreamingSettingLoopbackKey";
     [SVProgressHUD dismissWithDelay:2.];
     
     [SVProgressHUD setDefaultMaskType:oldType];
+}
+
+#pragma mark 0¥-
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"library"]) {
+        [self stop];
+        
+        UINavigationController *nc = segue.destinationViewController;
+        LibraryViewController *vc = (LibraryViewController*)nc.topViewController;
+        vc.client = self.client;
+    }
+}
+
+- (IBAction)unwindForSegue:(UIStoryboardSegue *)unwindSegue {
+    
 }
 
 @end

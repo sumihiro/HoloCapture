@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A410B8791E5AF230005FD7EA /* ThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A410B8781E5AF230005FD7EA /* ThumbnailCell.m */; };
+		A410B87C1E5AF27A005FD7EA /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A410B87B1E5AF27A005FD7EA /* LibraryViewController.m */; };
+		A410B8841E5B1F37005FD7EA /* LibararyItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A410B8831E5B1F37005FD7EA /* LibararyItemViewController.m */; };
 		A446F03D1E575735003AEDD6 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A446F03A1E575436003AEDD6 /* IJKMediaFramework.framework */; };
 		A446F03F1E5757B5003AEDD6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A446F03E1E5757B5003AEDD6 /* libz.tbd */; };
 		A474F0071E532F8900D92B2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A474F0061E532F8900D92B2A /* main.m */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A410B8771E5AF230005FD7EA /* ThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailCell.h; sourceTree = "<group>"; };
+		A410B8781E5AF230005FD7EA /* ThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailCell.m; sourceTree = "<group>"; };
+		A410B87A1E5AF27A005FD7EA /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
+		A410B87B1E5AF27A005FD7EA /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
+		A410B8821E5B1F37005FD7EA /* LibararyItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibararyItemViewController.h; sourceTree = "<group>"; };
+		A410B8831E5B1F37005FD7EA /* LibararyItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibararyItemViewController.m; sourceTree = "<group>"; };
 		A446F0341E575435003AEDD6 /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = ijkplayer/ios/IJKMediaPlayer/IJKMediaPlayer.xcodeproj; sourceTree = "<group>"; };
 		A446F03E1E5757B5003AEDD6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A474F0021E532F8900D92B2A /* HoloCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoloCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +100,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A410B8761E5AF212005FD7EA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A410B8771E5AF230005FD7EA /* ThumbnailCell.h */,
+				A410B8781E5AF230005FD7EA /* ThumbnailCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		A410B87D1E5B05C0005FD7EA /* HoloDeviceClient */ = {
+			isa = PBXGroup;
+			children = (
+				A474F01C1E532FBC00D92B2A /* HoloDeviceClient.h */,
+				A474F01D1E532FBC00D92B2A /* HoloDeviceClient.m */,
+			);
+			name = HoloDeviceClient;
+			sourceTree = "<group>";
+		};
 		A446F0351E575435003AEDD6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,12 +149,16 @@
 		A474F0041E532F8900D92B2A /* HoloCapture */ = {
 			isa = PBXGroup;
 			children = (
-				A474F01C1E532FBC00D92B2A /* HoloDeviceClient.h */,
-				A474F01D1E532FBC00D92B2A /* HoloDeviceClient.m */,
+				A410B87D1E5B05C0005FD7EA /* HoloDeviceClient */,
 				A474F01F1E5330AB00D92B2A /* LoginViewController.h */,
 				A474F0201E5330AB00D92B2A /* LoginViewController.m */,
 				A474F0221E53340B00D92B2A /* StreamingViewController.h */,
 				A474F0231E53340B00D92B2A /* StreamingViewController.m */,
+				A410B87A1E5AF27A005FD7EA /* LibraryViewController.h */,
+				A410B87B1E5AF27A005FD7EA /* LibraryViewController.m */,
+				A410B8761E5AF212005FD7EA /* Cell */,
+				A410B8821E5B1F37005FD7EA /* LibararyItemViewController.h */,
+				A410B8831E5B1F37005FD7EA /* LibararyItemViewController.m */,
 				A474F0081E532F8900D92B2A /* AppDelegate.h */,
 				A474F0091E532F8900D92B2A /* AppDelegate.m */,
 				A474F00E1E532F8900D92B2A /* Main.storyboard */,
@@ -294,7 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A474F00A1E532F8900D92B2A /* AppDelegate.m in Sources */,
+				A410B87C1E5AF27A005FD7EA /* LibraryViewController.m in Sources */,
 				A474F01E1E532FBC00D92B2A /* HoloDeviceClient.m in Sources */,
+				A410B8841E5B1F37005FD7EA /* LibararyItemViewController.m in Sources */,
+				A410B8791E5AF230005FD7EA /* ThumbnailCell.m in Sources */,
 				A474F0241E53340B00D92B2A /* StreamingViewController.m in Sources */,
 				A474F0071E532F8900D92B2A /* main.m in Sources */,
 				A474F0211E5330AB00D92B2A /* LoginViewController.m in Sources */,

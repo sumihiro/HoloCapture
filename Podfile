@@ -6,4 +6,5 @@ target 'HoloCapture' do
 
   # Pods for HoloCapture
   pod 'SVProgressHUD'
+  pod 'SDWebImage', '~>3.8'
 end
