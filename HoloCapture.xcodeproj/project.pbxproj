@@ -7,25 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A446F03D1E575735003AEDD6 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A446F03A1E575436003AEDD6 /* IJKMediaFramework.framework */; };
+		A446F03F1E5757B5003AEDD6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A446F03E1E5757B5003AEDD6 /* libz.tbd */; };
 		A474F0071E532F8900D92B2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A474F0061E532F8900D92B2A /* main.m */; };
 		A474F00A1E532F8900D92B2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A474F0091E532F8900D92B2A /* AppDelegate.m */; };
-		A474F00D1E532F8900D92B2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A474F00C1E532F8900D92B2A /* ViewController.m */; };
 		A474F0101E532F8900D92B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A474F00E1E532F8900D92B2A /* Main.storyboard */; };
 		A474F0121E532F8900D92B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A474F0111E532F8900D92B2A /* Assets.xcassets */; };
 		A474F0151E532F8900D92B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A474F0131E532F8900D92B2A /* LaunchScreen.storyboard */; };
+		A474F01E1E532FBC00D92B2A /* HoloDeviceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A474F01D1E532FBC00D92B2A /* HoloDeviceClient.m */; };
+		A474F0211E5330AB00D92B2A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A474F0201E5330AB00D92B2A /* LoginViewController.m */; };
+		A474F0241E53340B00D92B2A /* StreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A474F0231E53340B00D92B2A /* StreamingViewController.m */; };
+		CDB10A12218CD34D89ECF91A /* libPods-HoloCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ED62759BBAF3A30E82AC40 /* libPods-HoloCapture.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A446F0391E575436003AEDD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A446F0341E575435003AEDD6 /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA8A1B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFramework;
+		};
+		A446F03B1E575436003AEDD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A446F0341E575435003AEDD6 /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA941B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A446F0341E575435003AEDD6 /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = ijkplayer/ios/IJKMediaPlayer/IJKMediaPlayer.xcodeproj; sourceTree = "<group>"; };
+		A446F03E1E5757B5003AEDD6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A474F0021E532F8900D92B2A /* HoloCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoloCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A474F0061E532F8900D92B2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A474F0081E532F8900D92B2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A474F0091E532F8900D92B2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A474F00B1E532F8900D92B2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A474F00C1E532F8900D92B2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A474F00F1E532F8900D92B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A474F0111E532F8900D92B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A474F0141E532F8900D92B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A474F0161E532F8900D92B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A474F01C1E532FBC00D92B2A /* HoloDeviceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoloDeviceClient.h; sourceTree = "<group>"; };
+		A474F01D1E532FBC00D92B2A /* HoloDeviceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoloDeviceClient.m; sourceTree = "<group>"; };
+		A474F01F1E5330AB00D92B2A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A474F0201E5330AB00D92B2A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A474F0221E53340B00D92B2A /* StreamingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamingViewController.h; sourceTree = "<group>"; };
+		A474F0231E53340B00D92B2A /* StreamingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamingViewController.m; sourceTree = "<group>"; };
+		CC15DAFD94A1BCB0970469A9 /* Pods-HoloCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoloCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoloCapture/Pods-HoloCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		D4D9D715A3013B9CD76AF7A3 /* Pods-HoloCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoloCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoloCapture/Pods-HoloCapture.release.xcconfig"; sourceTree = "<group>"; };
+		F4ED62759BBAF3A30E82AC40 /* libPods-HoloCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HoloCapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +64,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A446F03F1E5757B5003AEDD6 /* libz.tbd in Frameworks */,
+				A446F03D1E575735003AEDD6 /* IJKMediaFramework.framework in Frameworks */,
+				CDB10A12218CD34D89ECF91A /* libPods-HoloCapture.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95CEB140C1A9CC6A0A91329B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC15DAFD94A1BCB0970469A9 /* Pods-HoloCapture.debug.xcconfig */,
+				D4D9D715A3013B9CD76AF7A3 /* Pods-HoloCapture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DC0D530F5D19A3AA7892C1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A446F03E1E5757B5003AEDD6 /* libz.tbd */,
+				F4ED62759BBAF3A30E82AC40 /* libPods-HoloCapture.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A446F0351E575435003AEDD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A446F03A1E575436003AEDD6 /* IJKMediaFramework.framework */,
+				A446F03C1E575436003AEDD6 /* IJKMediaFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A474EFF91E532F8900D92B2A = {
 			isa = PBXGroup;
 			children = (
+				A446F0341E575435003AEDD6 /* IJKMediaPlayer.xcodeproj */,
 				A474F0041E532F8900D92B2A /* HoloCapture */,
 				A474F0031E532F8900D92B2A /* Products */,
+				95CEB140C1A9CC6A0A91329B /* Pods */,
+				9DC0D530F5D19A3AA7892C1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +122,14 @@
 		A474F0041E532F8900D92B2A /* HoloCapture */ = {
 			isa = PBXGroup;
 			children = (
+				A474F01C1E532FBC00D92B2A /* HoloDeviceClient.h */,
+				A474F01D1E532FBC00D92B2A /* HoloDeviceClient.m */,
+				A474F01F1E5330AB00D92B2A /* LoginViewController.h */,
+				A474F0201E5330AB00D92B2A /* LoginViewController.m */,
+				A474F0221E53340B00D92B2A /* StreamingViewController.h */,
+				A474F0231E53340B00D92B2A /* StreamingViewController.m */,
 				A474F0081E532F8900D92B2A /* AppDelegate.h */,
 				A474F0091E532F8900D92B2A /* AppDelegate.m */,
-				A474F00B1E532F8900D92B2A /* ViewController.h */,
-				A474F00C1E532F8900D92B2A /* ViewController.m */,
 				A474F00E1E532F8900D92B2A /* Main.storyboard */,
 				A474F0111E532F8900D92B2A /* Assets.xcassets */,
 				A474F0131E532F8900D92B2A /* LaunchScreen.storyboard */,
@@ -86,9 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A474F0191E532F8900D92B2A /* Build configuration list for PBXNativeTarget "HoloCapture" */;
 			buildPhases = (
+				0DAC225DA150F7F47779CC17 /* [CP] Check Pods Manifest.lock */,
 				A474EFFE1E532F8900D92B2A /* Sources */,
 				A474EFFF1E532F8900D92B2A /* Frameworks */,
 				A474F0001E532F8900D92B2A /* Resources */,
+				06B41F5023E32D1961B141F4 /* [CP] Embed Pods Frameworks */,
+				4B2FE1D1AB37C8D25E79EAFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +181,7 @@
 				TargetAttributes = {
 					A474F0011E532F8900D92B2A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3LARBZN7YV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,12 +197,35 @@
 			mainGroup = A474EFF91E532F8900D92B2A;
 			productRefGroup = A474F0031E532F8900D92B2A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A446F0351E575435003AEDD6 /* Products */;
+					ProjectRef = A446F0341E575435003AEDD6 /* IJKMediaPlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A474F0011E532F8900D92B2A /* HoloCapture */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A446F03A1E575436003AEDD6 /* IJKMediaFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IJKMediaFramework.framework;
+			remoteRef = A446F0391E575436003AEDD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A446F03C1E575436003AEDD6 /* IJKMediaFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IJKMediaFrameworkTests.xctest;
+			remoteRef = A446F03B1E575436003AEDD6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A474F0001E532F8900D92B2A /* Resources */ = {
@@ -145,14 +240,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06B41F5023E32D1961B141F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoloCapture/Pods-HoloCapture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DAC225DA150F7F47779CC17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B2FE1D1AB37C8D25E79EAFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoloCapture/Pods-HoloCapture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A474EFFE1E532F8900D92B2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A474F00D1E532F8900D92B2A /* ViewController.m in Sources */,
 				A474F00A1E532F8900D92B2A /* AppDelegate.m in Sources */,
+				A474F01E1E532FBC00D92B2A /* HoloDeviceClient.m in Sources */,
+				A474F0241E53340B00D92B2A /* StreamingViewController.m in Sources */,
 				A474F0071E532F8900D92B2A /* main.m in Sources */,
+				A474F0211E5330AB00D92B2A /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,23 +413,59 @@
 		};
 		A474F01A1E532F8900D92B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC15DAFD94A1BCB0970469A9 /* Pods-HoloCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3LARBZN7YV;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${SOURCE_ROOT}/ijkplayer/ios/IJKMediaPlayer/IJKMediaPlayer\"",
+				);
 				INFOPLIST_FILE = HoloCapture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.orelabo.HoloCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A474F01B1E532F8900D92B2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D9D715A3013B9CD76AF7A3 /* Pods-HoloCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3LARBZN7YV;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${SOURCE_ROOT}/ijkplayer/ios/IJKMediaPlayer/IJKMediaPlayer\"",
+				);
 				INFOPLIST_FILE = HoloCapture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-lstdc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.orelabo.HoloCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -307,6 +488,7 @@
 				A474F01B1E532F8900D92B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
