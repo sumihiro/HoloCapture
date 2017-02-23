@@ -21,7 +21,8 @@ Usage
 Available on AppStore
 =========
 
-It will be available soon.
+You can also get the app from the AppStore.
+https://itunes.apple.com/jp/app/holocapture/id1207743320?mt=8
 
 Credit
 =========
