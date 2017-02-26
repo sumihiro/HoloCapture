@@ -5,6 +5,14 @@ HoloCapture is a Mixed Reality Capture app for Microsoft HoloLens under LGPL lic
 
 ![screenshot](https://github.com/sumihiro/HoloCapture/blob/master/img/screenshot.png)
 
+Features
+=========
+
+* You can watch Live Preview of Mixed Reality Capture!
+* You can see photos and videos taken with HoloLens!
+* You can take pictures with HoloLens!
+* You can delete photos and videos taken with HoloLens!
+
 Usage
 =========
 
